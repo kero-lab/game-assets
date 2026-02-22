@@ -3,8 +3,8 @@ import type {
   SteamGridDBAsset,
   SteamGridDBGame,
   AssetFetchOptions,
-} from './types.js';
-import { getSteamGridDbId, getPreferredAssetId } from './games.js';
+} from './types';
+import { getSteamGridDbId, getPreferredAssetId } from './games';
 
 const API_BASE = 'https://www.steamgriddb.com/api/v2';
 

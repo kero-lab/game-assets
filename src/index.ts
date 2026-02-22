@@ -4,7 +4,7 @@ export type {
   SteamGridDBGame,
   AssetFetchOptions,
   GameConfig,
-} from './types.js';
+} from './types';
 
 export {
   GAME_REGISTRY,
@@ -12,9 +12,9 @@ export {
   getSteamGridDbId,
   getPreferredAssetId,
   getKnownGameTypes,
-} from './games.js';
+} from './games';
 
-export { SteamGridDBClient } from './client.js';
-export type { SteamGridDBClientOptions } from './client.js';
+export { SteamGridDBClient } from './client';
+export type { SteamGridDBClientOptions } from './client';
 
-export { AssetCache } from './cache.js';
+export { AssetCache } from './cache';

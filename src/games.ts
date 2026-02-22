@@ -1,4 +1,4 @@
-import type { AssetType, GameConfig } from './types.js';
+import type { AssetType, GameConfig } from './types';
 
 /**
  * Registry of all known games with their SteamGridDB IDs,

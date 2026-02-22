@@ -1,4 +1,4 @@
-import type { AssetType } from './types.js';
+import type { AssetType } from './types';
 
 /**
  * In-memory asset URL cache.
