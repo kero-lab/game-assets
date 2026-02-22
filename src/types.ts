@@ -45,3 +45,13 @@ export interface GameConfig {
   color: { primary: string };
   preferredAssets?: Partial<Record<AssetType, number>>;
 }
+
+/** Stored preferences: gameType -> assetType -> single ID (legacy) or array of IDs. */
+export type GameAssetPreferences = Record<string, Partial<Record<string, number | number[]>>>;
+
+/** Normalize a preference value to an array. Handles legacy single-ID format. */
+export function normalizePreferenceIds(value: number | number[] | undefined): number[] {
+  if (value === undefined) return [];
+  if (Array.isArray(value)) return value;
+  return [value];
+}
